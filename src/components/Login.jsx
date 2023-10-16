@@ -25,11 +25,8 @@ export const Login = () => {
             });
 
             if (response.ok) {
-                // Successful login, redirect to another page or perform further actions.
-                // You can also store the user's session information.
                 console.log('Login successful');
             } else {
-                // Login failed, show an error message.
                 const data = await response.json();
                 setLoginError(data.message);
             }
